@@ -98,7 +98,7 @@ const {getData, isLoading, isLoggedIn} = useContext(AuthContext)
                         </label>
                         <a href="#" className='hover:underline'>Forgot password</a>
                     </div>
-                    <button 
+                    {/* <button 
                         onClick={formData}
                         className="w-full p-2 bg-[#C8EE44] text-white rounded flex items-center justify-center gap-2"
                         disabled={isLoading}
@@ -111,10 +111,10 @@ const {getData, isLoading, isLoggedIn} = useContext(AuthContext)
                         ) : (
                             "Sign in"
                         )}
-                    </button>
+                    </button> */}
                     <button 
                         onClick={(e) => handleSubmit(e)}
-                        className="w-full p-2 bg-[var(--bg-green)] text-[var(--text-color1)] rounded flex items-center justify-center gap-2"
+                         className='bg-[#C8EE44] mt-7 w-full max-w-md h-12 rounded-md md:text-xl font-medium hover:bg-[#b9d93d] transition-colors'
                         disabled={isLoading}
                         >
                         {isLoading ? (
